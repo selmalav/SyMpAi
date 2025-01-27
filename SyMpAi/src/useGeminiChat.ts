@@ -21,7 +21,7 @@ export function useGeminiChat() {
     try {
       const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
       const model = genAI.getGenerativeModel({ 
-        model: 'gemini-pro',  // Özel model şu an için kullanılamıyor, gemini-pro kullanıyoruz
+        model: 'tunedModels/semptomlar2000-dguknt364zh9',  
         generationConfig: {
           temperature: 1,
           topP: 0.95,
